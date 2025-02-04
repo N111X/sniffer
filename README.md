@@ -1,4 +1,4 @@
-# Desarrollo de un Analizador de Red (Sniffer)
+# Desarrollando un Analizador de Red (Sniffer)
 
 ## Introducción
 
@@ -126,7 +126,7 @@ Para ello, yo usare nvim, pero pueden usar el IDE que gusten, el que es mas reco
 
 Comencemos con algo sencillo.
 Importamos el modulo de `pyshark` para poder trabajar con el.
-![[Pasted image 20250204132241.png]]
+![Image](https://github.com/user-attachments/assets/5f3b736b-177c-46c8-a889-c6176bb23ccd)
 ```python
 # Crearemos una variable que tiene como valor una lista vacia, esta lista vacia sera la que almacene los resultados, en este caso almacenara los paquetes que iremos capturando
 paquetes_captura = []
@@ -177,7 +177,7 @@ for pkt in paquetes_captura:
 
 La salida se ve algo de esta manera:
 
-![[Pasted image 20250204151623.png]]
+![Image](https://github.com/user-attachments/assets/5bc63169-06ec-45b0-a4d1-2933ab5854b1)
 
 ## Detección de un sniffer en al Red.
 ### Detección de Sniffers en sistemas UNIX/Linux
@@ -220,4 +220,4 @@ En redes conmutadas (que usan switches), una técnica común para detectar sniff
     **WinARP Watch** es una herramienta similar a **ARPWatch** pero diseñada para Windows. Monitorea la caché ARP y las correspondencias IP/MAC, y te mantiene informado sobre cualquier nuevo par que se añada a la red, aunque no envía correos de alerta.
 
 
-Este articulo es únicamente con el fin de trata de explicar como es que funciona un sniffer y mencionar algunos métodos para poder identificar un sniffer en la red. Además, se han descrito algunas herramientas y métodos tanto para la detección en sistemas UNIX/Linux como en Windows, así como en redes conmutadas, lo que te permitirá estar mejor preparado para identificar posibles amenazas y proteger tu red de intrusos que puedan estar interceptando el tráfico. El artículo también proporciona una guía básica para la implementación de un sniffer en Python, ayudándote a entender su funcionamiento y cómo capturar paquetes para su posterior análisis.
+Este articulo es únicamente con el fin de trata de explicar como es que funciona un sniffer y mencionar algunos métodos para poder identificar un sniffer en la red. Además, se han descrito algunas herramientas y métodos tanto para la detección en sistemas UNIX/Linux como en Windows, así como en redes conmutadas, lo que te permitirá estar mejor preparado para identificar posibles amenazas y proteger tu red de intrusos que puedan estar interceptando el tráfico. El artículo también proporciona una guía básica para la implementación de un sniffer en Python, ayudándote a entender su funcionamiento y cómo capturar paquetes para su posterior análisis. Es una herramientas mas para la comprension que para el uso en algun entorno real, en su caso recomiendo usar Wireshark o tshark.
